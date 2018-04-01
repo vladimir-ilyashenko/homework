@@ -39,6 +39,7 @@ int* Remove_Negatives(int *array, int *array_size) {
   for (int i=0;i<*array_size; i++) {
     if (array[i]<0) {
       array = Delete_Element_At_Position(array, array_size, i+1);
+      i--;
     }
   }
   return array;
